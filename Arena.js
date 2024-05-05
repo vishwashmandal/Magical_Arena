@@ -110,7 +110,16 @@ class Arena {
     }
 
 }
-
+//Exports for UnitTesting
+module.exports = {
+    Player: Player,
+    Arena: Arena
+};
+//Create an object with two player
+const player1=new Player(50,5,10)
+const player2=new Player(100,10,5)
+const arena=new Arena(player1,player2)
+arena.playMatch();
 
 
 
